@@ -10,6 +10,9 @@ def index():
     home_controller = home.HomeController()
     return home_controller.index()
 
-if __name__ == "__main__":
-    
+@app.route('/login', methods=['POST'])
+def login():
+    return "hello world"
+
+if __name__ == "__main__":  
     app.run(debug=True)
